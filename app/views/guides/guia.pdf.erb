@@ -1,0 +1,43 @@
+<header>
+  <div class="logo">
+    <%= wicked_pdf_image_tag('logopassaport2.png') %> 
+  </div>
+  <div id="title_guia">
+    <h1>Guia de Atendimento Médico</h1>
+  </div>
+</header>
+<main>
+  <div class="to_company"><strong>Para <%= @guide.company %></strong></div>
+  <div class="address_company"><strong><%= @guide.address %></strong></div>
+  <div class="date">Campo Grande, sexta, 04 de janeiro de 2019</div><br>
+
+
+  <div class="text">Prezados Senhores,<br>
+  A <%= @guide.passport %> autoriza o paciente abaixo descrito a realizar os seguintes procedimentos médicos, sem nenhum custo ao mesmo:</div>
+
+  <table>
+    <tr>
+      <td  colspan = "2">Paciente: <%= @guide.patient %></td>
+      <td>Médico(a): <%= @guide.doctor %></td> 
+    </tr>
+    <tr>
+      <td>Data: <%= @guide.date %></td>
+      <td>Horário: <%= @guide.hour %></td>
+      <td>Especialidade:<%= @guide.specialty %></td>
+    </tr>
+  </table>
+
+  <p><strong>Exames Solicitados:</strong></p>
+  <div> <%= @guide.exam %> </div>
+
+    <div class='container_guide'>
+      <div class='col1'><%= @guide.patient %></div>
+      <div class='col2'><%= @guide.document %></div>
+      <div class='col3'><%= @guide.passport %></div>  
+    </div>
+
+    <div class="single_row">É imprescindível apresentação de documento pessoal com foto e pedido médico em caso de exame. Menores de idade devem apresentar certidão de nascimento e estar acompanhado de responsável. O prazo máximo para retorno é de 15 dias corridos.
+      Passaporte Saúde Central de Agendamento - Campo Grande MS - Fone: 3342-5035
+    </div>
+  </div>  
+</main>

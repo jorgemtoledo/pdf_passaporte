@@ -1,0 +1,212 @@
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  color: #0087C3;
+  text-decoration: none;
+}
+
+section {
+  position: relative;
+  width: 21cm;  
+  height: 29.7cm; 
+  margin: 0 auto; 
+  color: #555555;
+  background: #FFFFFF; 
+  font-family: Arial, sans-serif; 
+  font-size: 14px; 
+  font-family: SourceSansPro;
+}
+
+header {
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #AAAAAA;
+}
+
+.logo {
+  float: left;
+  margin-top: 8px;
+}
+
+.logo img {
+  height: 70px;
+}
+
+.date {
+  margin-top: 8px;
+  float: right;
+  text-align: right;
+}
+
+.text {
+  margin-top: 30px;
+  text-align: justify;
+}
+
+.text_model {
+  margin-top: 10px;
+  text-align: justify;
+  font-size: 18px;
+}
+
+#title_guia {
+  width:700px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.to_company, .address_company {
+  text-align: center;
+  font-size: 20px; 
+}
+
+#company {
+  float: right;
+  text-align: right;
+}
+
+#details {
+  margin-bottom: 20px;
+}
+
+#client {
+  padding-left: 6px;
+  border-left: 6px solid rgb(12, 160, 79);
+  float: left;
+}
+
+#client .to {
+  color: #777777;
+}
+
+h2.name {
+  font-size: 1.4em;
+  font-weight: normal;
+  margin: 0;
+}
+
+#invoice {
+  float: right;
+  text-align: right;
+}
+
+#invoice h1 {
+  color: #000000;
+  font-size: 2.4em;
+  line-height: 1em;
+  font-weight: normal;
+  margin: 0  0 10px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 20px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  padding: 5px;
+}
+table {
+  border-spacing: 15px;
+  width:100%;
+}
+
+.container_guide {
+  display:inline;
+  text-align:center;
+}
+  
+.col1, .col2, .col3
+{
+  margin-top: 70px;
+  text-align: center;
+  border-top: 1.2px solid;
+  float:left;
+  width: 274px;
+  margin-left:6px;
+  margin-right:12px;
+}
+
+// CSS to document model
+.model_col1, .model_col2, .model_col3
+{
+  margin-top: 70px;
+  text-align: center;
+  border-top: 1.2px solid;
+  float:left;
+  width: 247px;
+  margin-left:6px;
+  margin-right:12px;
+}
+
+.col_left, .col_right
+{
+  text-align: center;
+  border-top: 1.2px solid;
+  float:left;
+  width: 274px;
+}
+
+.left
+{
+  margin-top: 90px;
+}
+
+.right
+{
+  margin-top: 65px;
+  margin-left:330px;
+}
+
+.single_row {
+  margin-top: 20px;
+  text-align: center;
+  border: 1px solid;
+  float:left;
+  width: 98%;
+  height:70px;
+  margin-left:6px;
+  margin-right:12px;
+  padding-top: 8px;
+}
+
+.value {
+  border: 1px solid;
+  text-align: center;
+  margin-top:0px;
+  margin-bottom:5px;
+  margin-left:540px;
+  margin-right:120px;
+  font-size: 35px;
+  padding-left: 10px;
+}
+
+#notices{
+  margin-top:120px;
+  padding-left: 6px;
+  border-left: 6px solid #cc0d0d;  
+}
+
+#notices .notice {
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+footer {
+  color: #777777;
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid #AAAAAA;
+  padding: 8px 0;
+  text-align: center;
+}
+

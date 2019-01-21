@@ -1,0 +1,34 @@
+<header>
+  <div class="logo">
+    <%= wicked_pdf_image_tag('logopassaport2.png') %> 
+  </div>
+  <div id="title_guia">
+    <h1>Autorização para Desconto (1/1)</h1>
+  </div>
+</header>
+<main>
+  <p class="value">
+    <span class="underline"><strong>R$ <%= @guide.value %></strong></span>
+  </p>
+
+  <table class="table_guia">
+    <tr>
+      <td  colspan = "3">Titular: <%= @guide.patient %></td>
+    </tr>
+    <tr>
+      <td>Matrícula: 6441</td>
+      <td colspan = "2">Médico(a): <%= @guide.doctor %></td> 
+    </tr>
+    <tr>
+      <td  colspan = "3">Dependente:: <%= @guide.patient %></td>
+    </tr>
+  </table>
+
+  <div>Autorizo a empresa acima a descontar em minha folha de pagamento os valores acima mencionados em favor da Passaporte Saúde, pois é minha co-participação em consultas e exames realizados por mim e/ou meus dependentes.</div>
+  <div class="date"> Campo Grande, sexta, 04 de janeiro de 2019 </div> 
+
+  <div class='container_guide'>
+    <div class="col_left left">Assinatura do Titular ou Dependente</div>
+    <div class="col_right right">Ass. do Responsável <br><%= @guide.passport %></div>
+  </div> 
+</main>

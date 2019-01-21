@@ -1,0 +1,63 @@
+   <section>    
+    <header class="clearfix">
+      <div class="logo">
+        <%= wicked_pdf_image_tag('logopassaport2.png') %> 
+      </div>
+      <div id="company">
+        <h2 class="name">Passaporte - Saúde</h2>
+        <div>Rua: xxxxxxx, 999 - Campo Grande - MS</div>
+        <div>(67) 88888-9999</div>
+        <div><a href="mailto:contato@passaport_sauide.com.br">contato@passaport_sauide.com.br</a></div>
+      </div>
+      </div>
+    </header>
+    <main>
+      <div id="details" class="clearfix">
+        <div id="client">
+          <div class="to">PARA:</div>
+          <h2 class="name">LIFECOR </h2>
+          <div class="address">RUA HELIO YOSHIAKI IKEZIRI, 34 - ED EVIDENCE - S </div>
+          <div class="email">Fone: 3201-3035</div>
+          <div class="email"><a href="mailto:contato@lifecor.com">contato@lifecor.com</a></div>
+        </div>
+        <div id="invoice">
+          <h1>Guia de Atendimento Médico</h1>
+          <div>Campo Grande, sexta, 04 de janeiro de 2019</div>
+        </div>
+      </div>
+
+      <div class="text_model">Prezados Senhores,<br>
+      A <%= @guide.passport %> autoriza o paciente abaixo descrito a realizar os seguintes procedimentos médicos, sem nenhum custo ao mesmo:</div>
+
+      <table>
+        <tr>
+          <td  colspan = "2">Paciente: <%= @guide.patient %></td>
+          <td>Médico(a): <%= @guide.doctor %></td> 
+        </tr>
+        <tr>
+          <td>Data: <%= @guide.date %></td>
+          <td>Horário: <%= @guide.hour %></td>
+          <td>Especialidade:<%= @guide.specialty %></td>
+        </tr>
+      </table>
+
+      <p><strong>Exames Solicitados:</strong></p>
+      <div> <%= @guide.exam %> </div>
+
+       <div class='container_guide'>
+        <div class='model_col1'><%= @guide.patient %></div>
+        <div class='model_col2'><%= @guide.document %></div>
+        <div class='model_col3'><%= @guide.passport %></div>  
+      </div> 
+
+      <div id="notices">
+        <div class="notice">É imprescindível apresentação de documento pessoal com foto e pedido médico em caso de exame. Menores de idade devem apresentar certidão de nascimento e estar acompanhado de responsável. O prazo máximo para retorno é de 15 dias corridos.
+          Passaporte Saúde Central de Agendamento - Campo Grande MS - Fone: 3342-5035
+        </div>
+        </div>
+    </main>
+    <footer>
+      Passaporte - Saúde - Rua: xxxxxxx, 999 - Campo Grande - MS - (67) 88888-9999.
+    </footer>
+</section> 
+
